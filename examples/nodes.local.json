@@ -1,0 +1,4 @@
+[
+  { "node_id": "node-01-gpu", "label": "Route Node 1 - GPU lane", "route_label": "Node 1", "kind": "gpu", "rate_per_min_usd": 0.004 },
+  { "node_id": "node-02-cpu", "label": "Route Node 2 - CPU lane", "route_label": "Node 2", "kind": "cpu", "rate_per_min_usd": 0.0001 }
+]

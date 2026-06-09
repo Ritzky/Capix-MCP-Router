@@ -1,0 +1,36 @@
+{
+  "source": "capix-private-demo-export",
+  "exportedAt": "2026-06-08T15:54:18.673Z",
+  "notes": "Public-safe route snapshot for MongoDB MCP. Contains route metadata only; no private wallet, treasury, admin, SSH, bearer-token, or host credentials are included.",
+  "nodes": [
+    {
+      "node_id": "node-01-gpu",
+      "label": "Route Node 1 - GPU lane",
+      "route_label": "Node 1",
+      "kind": "gpu",
+      "rate_per_min_usd": 0.004,
+      "runtime_node_id": "oci-demo-1",
+      "endpoint_base_url": "https://agent-1.capix.network",
+      "provider_name": "OCI Demo Edge",
+      "region": "eu-amsterdam-1",
+      "capacity": "GPU-style numeric workload lane routed onto Oracle demo node 1",
+      "hardware_profile": "gpu-mock",
+      "simulated": true
+    },
+    {
+      "node_id": "node-02-cpu",
+      "label": "Route Node 2 - CPU lane",
+      "route_label": "Node 2",
+      "kind": "cpu",
+      "rate_per_min_usd": 0.0001,
+      "runtime_node_id": "oci-demo-2",
+      "endpoint_base_url": "https://agent-2.capix.network",
+      "provider_name": "OCI Demo Edge",
+      "region": "eu-amsterdam-1",
+      "capacity": "CPU setup, parsing, cleaning, and reporting lane routed onto Oracle demo node 2",
+      "hardware_profile": "cpu-standard",
+      "simulated": false
+    }
+  ],
+  "marketListings": []
+}

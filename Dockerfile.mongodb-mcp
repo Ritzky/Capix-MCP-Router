@@ -1,0 +1,10 @@
+FROM node:22-slim
+
+RUN npm install -g mongodb-mcp-server@latest
+
+ENV MDB_MCP_TRANSPORT=http \
+    MDB_MCP_READ_ONLY=true \
+    MDB_MCP_HTTP_HOST=0.0.0.0 \
+    MDB_MCP_HTTP_BODY_RESPONSE_TYPE=json
+
+CMD ["sh", "-c", "export MDB_MCP_HTTP_PORT=${PORT:-8080}; exec mongodb-mcp-server"]
